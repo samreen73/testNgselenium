@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" name="FirefoxeTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="paralleldemo.Parallelclass">
+        <methods>
+          <include name="end"/>
+          <include name="setup"/>
+          <include name="method"/>
+        </methods>
+      </class> <!-- paralleldemo.Parallelclass -->
+    </classes>
+  </test> <!-- FirefoxeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
